@@ -58,7 +58,7 @@ There are a few more default themes than Omakub: _catppuccin-latte_, _flexoki-li
 </p>
 
 In addition to these, the ability to import others has been added via a dedicated tool. These can be created by the user or taken from the community.
-You can view the extra themes on the [dedicated page](/themes) on OmaKasui.org.
+You can view the extra themes on the [dedicated page](https://omakasui.org/themes) on OmaKasui.org.
 
 ## Enhance Extensions
 
