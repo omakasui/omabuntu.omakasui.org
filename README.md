@@ -4,7 +4,7 @@ This is the [`omakube`](https://github.com/Kasui92/omakube) website.
 
 ## Contributions
 
-This is a personal project, but suggestions and feedback are always welcome!
+This is an open and evolving project, and suggestions and feedback are always welcome.
 
 ## License
 
