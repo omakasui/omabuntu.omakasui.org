@@ -1,6 +1,6 @@
 # Installation
 
-Get started with Omakube on your Ubuntu system
+Get started with Omabuntu on your Ubuntu system
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ Get started with Omakube on your Ubuntu system
 
 Installation requires a freshly installed Ubuntu Desktop system. You can try it on an existing installation, but conflicts with already installed applications and configurations may occur, and you’ll likely lose much of your customization work.
 
-Omakube can also be installed on a system where Omakub is already present. In this case, however, it's recommended using the [migration](/manual/setup/migration) procedure.
+Omabuntu can also be installed on a system where Omakub is already present. In this case, however, it's recommended using the [migration](/manual/setup/migration) procedure.
 
 The installation has been tested starting from Ubuntu 24.04 up to the latest version. That said, it's strongly suggested sticking to LTS releases to ensure a stable and predictable environment.
 
@@ -17,13 +17,13 @@ At the moment, _systems with LVM disk encryption are not supported_. Using them 
 
 ## Install
 
-To install Omakube, simply run the following command in your terminal:
+To install Omabuntu, simply run the following command in your terminal:
 
 ```bash
-curl -fsSL https://omakube.omakasui.org/install | bash
+curl -fsSL https://omabuntu.omakasui.org/install | bash
 ```
 
-The command downloads Omakube to your terminal and starts the installation. You’ll be asked for your username and email to configure Git, then later to confirm the extensions that will be installed. A reboot is required at the end.
+The command downloads Omabuntu to your terminal and starts the installation. You’ll be asked for your username and email to configure Git, then later to confirm the extensions that will be installed. A reboot is required at the end.
 
 Rebooting is strongly recommended, even just to let GNOME apply its updates.
 

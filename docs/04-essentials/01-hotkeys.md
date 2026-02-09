@@ -1,19 +1,19 @@
 # Hotkeys
 
-A carefully crafted set of keyboard shortcuts is included with Omakube to enhance your productivity. These shortcuts are set up automatically during installation and remain fully customizable afterward.
+A carefully crafted set of keyboard shortcuts is included with Omabuntu to enhance your productivity. These shortcuts are set up automatically during installation and remain fully customizable afterward.
 
-> Many of these shortcuts are inspired by and derived from the [Omakub](https://learn.omacom.io/1/read/29/hotkeys/) and the [Omarchy](https://learn.omacom.io/2/the-omarchy-manual/53/hotkeys) configurations. Omakube builds upon this foundation with additional customizations.
+> Many of these shortcuts are inspired by and derived from the [Omakub](https://learn.omacom.io/1/read/29/hotkeys/) and the [Omarchy](https://learn.omacom.io/2/the-omarchy-manual/53/hotkeys) configurations. Omabuntu builds upon this foundation with additional customizations.
 
 ## Window Management
 
 > [!note]
-> Omakube uses 6 fixed workspaces instead of dynamic mode for better organization.
+> Omabuntu uses 6 fixed workspaces instead of dynamic mode for better organization.
 
 | Hotkey                    | Action                                 |
 | ------------------------- | -------------------------------------- |
 | `Super` + `Space`         | Applications launcher                  |
 | `Super` + `A`             | See all applications (app grid)        |
-| `Super` + `Alt` + `Space` | Omakube control menu                   |
+| `Super` + `Alt` + `Space` | Omabuntu control menu                  |
 | `Super` + `Escape`        | Lock/suspend/restart/shutdown computer |
 | `Super` + `W`             | Close window                           |
 | `Super` + `1-6`           | Jump to workspace 1-6                  |

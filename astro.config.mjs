@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://omakube.omakasui.org",
+  site: "https://omabuntu.omakasui.org",
   base: "/",
   vite: {
     plugins: [tailwindcss()],
