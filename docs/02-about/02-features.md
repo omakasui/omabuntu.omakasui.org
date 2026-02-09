@@ -2,11 +2,11 @@
 
 How Omabuntu differs can be found here, in a concise list of features and quality-of-life improvements that make the overall experience smoother and more pleasant.
 
-## Cleaner installation and improved robustness
+## Cleaner and more robust installation
 
 The installation process has been refined to be more visually polished and less fragile, with logs available in case something goes wrong. By removing the need to handle multiple installation types and focusing solely on delivering a cohesive desktop experience, the flow now centers on preparing the environment for the user. This also allowed a reduction in the number of default apps, keeping only the usual essentials that are easy to remove, without compromising the idea of a fast startup once installation is complete.
 
-The decision not to pursue an ultra-minimal setup aligns with Omakub’s _Omakase Doctrine_ and ensures a ready-to-use environment for those approaching Linux for the first time.
+The decision not to pursue an ultra-minimal setup aligns with Omakub’s [_Omakase Doctrine_](https://learn.omacom.io/3/omacom/81/doctrine) and ensures a ready-to-use environment for those approaching Linux for the first time.
 
 ## Wofi App Launcher & Unified Menu
 
@@ -26,7 +26,7 @@ A set of scripts, adapted from Omarchy and customized for Omabuntu, designed to 
 
 ## More Hotkeys
 
-_Yes, using the keyboard is a lot of fun._ <br/>
+_Yes, using the keyboard is a lot of fun!_ <br/>
 That's why we've introduced several shortcuts to make it easier to quickly launch apps, navigate Omabuntu settings, and manage the night light. The plan is to expand them even further!
 
 ## More Default Themes and Extra Themes
@@ -57,8 +57,10 @@ There are a few more default themes than Omakub: _catppuccin-latte_, _flexoki-li
   <i>Hackerman</i>
 </p>
 
+All of these themes are based on [Omarchy defaults](https://learn.omacom.io/2/the-omarchy-manual/52/themes).
+
 In addition to these, the ability to import others has been added via a dedicated tool. These can be created by the user or taken from the community.
-You can view the extra themes on the [dedicated page](https://omakasui.org/themes) on OmaKasui.org.
+You can view the extra themes on the [dedicated page](https://omakasui.org/themes) on Omakasui.org.
 
 ## Enhance Extensions
 
@@ -69,7 +71,7 @@ Specifically, [`Tactile`](https://extensions.gnome.org/extension/4548/tactile/)�
 ![Icon Launcher](/images/topbar-extension.png)
 
 <p class="text-center">
-  <i>Icon Launcher in Omakub top bar</i>
+  <i>Icon Launcher</i>
 </p>
 
 ## Custom Plymouth and GDM3

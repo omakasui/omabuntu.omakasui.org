@@ -10,7 +10,7 @@ So...
 
 ## In the heart is Omakub...
 
-It's called Omabuntu, but that's only a superficial name. Deep down, _it's still the same, beloved Omakub_. The folders, variables, and scripts bear his name, and that's the way it will always be. It's not meant to be anything else...and this is also to ensure it's always compatible with the project it's based on.
+It's called Omabuntu, but that's only a superficial name. Deep down, _it's still the same, beloved Omakub_. The folders, variables, and scripts bear his name, and that's the way it will always be. It's not meant to be anything else... and this is also to ensure it's always compatible with the project it's based on.
 
 ## ...but with the passion of Omarchy
 
