@@ -1,2 +1,2 @@
 OMAKUB_REF=dev
-eval "$(wget -qO- https://raw.githubusercontent.com/omakasui/omakube/main/boot.sh)"
+eval "$(wget -qO- https://raw.githubusercontent.com/omakasui/omabuntu/main/boot.sh)"

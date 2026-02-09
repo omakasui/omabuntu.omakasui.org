@@ -1,1 +1,1 @@
-eval "$(wget -qO- https://raw.githubusercontent.com/omakasui/omakube/main/migrate.sh)"
+eval "$(wget -qO- https://raw.githubusercontent.com/omakasui/omabuntu/main/migrate.sh)"

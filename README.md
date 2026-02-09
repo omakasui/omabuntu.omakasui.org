@@ -1,6 +1,6 @@
-# omakube.omakasui.org
+# omabuntu.omakasui.org
 
-This is the [`omakube`](https://github.com/omakasui/omakube) website.
+This is the [`omabuntu`](https://github.com/omakasui/omabuntu) website.
 
 ## Contributions
 
@@ -8,4 +8,4 @@ This is an open and evolving project, and suggestions and feedback are always we
 
 ## License
 
-omakube.omakasui.org is released under the [MIT License](https://github.com/omakasui/omakube.omakasui.org/blob/main/LICENSE).
+omabuntu.omakasui.org is released under the [MIT License](https://github.com/omakasui/omabuntu.omakasui.org/blob/main/LICENSE).
