@@ -46,6 +46,7 @@ A carefully crafted set of keyboard shortcuts is included with Omabuntu to enhan
 | `Super` + `Return`              | Terminal (alacritty/kitty)      |
 | `Control` + `Alt` + `T`         | Default Terminal (Gnome)        |
 | `Shift` + `Super` + `B`         | Web Browser                     |
+| `Shift` + `Super` + `Return`    | Web Browser                     |
 | `Shift` + `Super` + `Alt` + `B` | Web Browser (private/incognito) |
 | `Shift` + `Super` + `F`         | File Manager                    |
 | `Shift` + `Super` + `T`         | Activity (btop)                 |
