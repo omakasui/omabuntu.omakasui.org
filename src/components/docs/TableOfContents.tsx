@@ -1,13 +1,8 @@
+import type { DocsHeadings } from "@/@types/docs";
 import { useEffect, useState } from "react";
 
-interface Heading {
-  depth: number;
-  slug: string;
-  text: string;
-}
-
 interface Props {
-  headings: Heading[];
+  headings: DocsHeadings[];
 }
 
 export default function TableOfContents({ headings }: Props) {
