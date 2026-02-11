@@ -3,7 +3,8 @@ import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import MarkdownEnhancements from "@/components/MarkdownEnhancements.astro";
 import DocsSidebarLeft from "@/components/docs/DocsSidebarLeft.astro";
-import DocsSidebarRight from "@/components/docs/DocsSidebarRight.astro";
+import TableOfContents from "@/components/docs/TableOfContents";
+import { extractHeadingsFromMarkdown } from "@/utils/docs";
 import type { CollectionEntry } from "astro:content";
 
 import "@/styles/global.css";
@@ -21,6 +22,9 @@ const { title, currentSlug = "", entry } = Astro.props;
 
 // Set dynamic page title
 const pageTitle = `${title ? `${title} | ` : ""}Omabuntu - Manual`;
+
+// Extract headings from markdown content
+const headings = entry ? extractHeadingsFromMarkdown(entry.body || "") : [];
 ---
 
 <!doctype html>
@@ -83,7 +87,7 @@ const pageTitle = `${title ? `${title} | ` : ""}Omabuntu - Manual`;
         <slot />
       </div>
 
-      {entry && <DocsSidebarRight entry={entry} />}
+      <TableOfContents headings={headings} client:load />
     </div>
 
     <MarkdownEnhancements />
