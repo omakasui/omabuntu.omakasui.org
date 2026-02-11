@@ -26,6 +26,27 @@ Apparently, if the disk is encrypted using LVM, the boot process hangs. This hap
 
 A solution would be to either prevent installation when LVM is detected, or block the boot process and present a password entry form.
 
+## Migration
+
+If something goes wrong during migration:
+
+### Check the migration log
+
+The script creates a detailed log at `~/.omakub-migration.log`. Review it to identify issues:
+
+```bash
+cat /var/log/omabuntu-install.log
+```
+
+### Restore from backup
+
+Automatic backups are stored in `~/.local/share/omakub-backup-{timestamp}/`. You can manually restore specific files:
+
+```bash
+rm ~/.local/share/omakub
+cp ~/.local/share/omakub-backup-{timestamp} ~/.local/share/omakub
+```
+
 ## Known Issue
 
 ### `X11` and `wofi`

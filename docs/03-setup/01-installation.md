@@ -25,6 +25,6 @@ curl -fsSL https://omabuntu.omakasui.org/install | bash
 
 The command downloads Omabuntu to your terminal and starts the installation. You’ll be asked for your username and email to configure Git, then later to confirm the extensions that will be installed. A reboot is required at the end.
 
-Rebooting is strongly recommended, even just to let GNOME apply its updates.
+**Rebooting is strongly recommended**, even just to let GNOME apply its updates.
 
-If you encounter errors, you can consult the [dedicated section](/manual/setup/troubleshooting) in **troubleshooting**.
+If you encounter errors, you can consult the [dedicated section](/manual/setup/troubleshooting#installation) in **troubleshooting**.
