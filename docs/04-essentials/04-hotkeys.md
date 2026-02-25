@@ -80,20 +80,20 @@ All style options are also accessible under Style in the Omakub menu (`Super + A
 
 ## Terminal (Zellij)
 
-| Hotkey                      | Action                    |
-| --------------------------- | ------------------------- |
-| `Control` + `G` + `P` + `R` | New vertical pane         |
-| `Control` + `G` + `P` + `D` | New horizontal pane       |
-| `Alt` + `Arrow`             | Navigate panes (and tabs) |
-| `Alt` + `=`                 | Expand pane               |
-| `Alt` + `-`                 | Shrink pane               |
-| `Control` + `G` + `T` + `N` | New tab                   |
-| `Control` + `G` + `T` + `R` | Rename tab                |
-| `Control` + `G` + `O` + `D` | Suspend session           |
-| `Control` + `G` + `O` + `W` | Resume session            |
-| `Control` + `G` + `S` + `E` | Edit scroll history       |
-| `Control` + `R`             | Reveal command history    |
-| `Control` + `G` + `R` + `Arrow` | Resize pane     |
+| Hotkey                          | Action                    |
+| ------------------------------- | ------------------------- |
+| `Control` + `G` + `P` + `R`     | New vertical pane         |
+| `Control` + `G` + `P` + `D`     | New horizontal pane       |
+| `Alt` + `Arrow`                 | Navigate panes (and tabs) |
+| `Alt` + `=`                     | Expand pane               |
+| `Alt` + `-`                     | Shrink pane               |
+| `Control` + `G` + `T` + `N`     | New tab                   |
+| `Control` + `G` + `T` + `R`     | Rename tab                |
+| `Control` + `G` + `O` + `D`     | Suspend session           |
+| `Control` + `G` + `O` + `W`     | Resume session            |
+| `Control` + `G` + `S` + `E`     | Edit scroll history       |
+| `Control` + `R`                 | Reveal command history    |
+| `Control` + `G` + `R` + `Arrow` | Resize pane               |
 
 See the [Zellij manual](https://zellij.dev/documentation/keybinding-presets) to learn all the keybindings.
 

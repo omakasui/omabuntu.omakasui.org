@@ -13,8 +13,6 @@ Omabuntu can also be installed on a system where Omakub is already present. In t
 
 The installation has been tested starting from Ubuntu 24.04 up to the latest version. That said, it's strongly suggested sticking to LTS releases to ensure a stable and predictable environment.
 
-At the moment, _systems with LVM disk encryption are not supported_. Using them may cause boot issues, so this setup is not recommended.
-
 ## Install
 
 To install Omabuntu, simply run the following command in your terminal:
