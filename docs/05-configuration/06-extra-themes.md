@@ -16,9 +16,11 @@ The main file you’ll want to tweak is colors.toml. This file defines the color
 
 If you’re creating a light theme, just add an empty file called `light.mode` in the root of your theme folder. This will automatically associate the theme with light mode across supported applications.
 
-### Icon colors
+### GTK Theme
 
-If you want to match the file manager icons with your theme, add a file called `icons.theme` containing the name of the icon set you want to use. By default, the available options are:
+Omabuntu uses a file called `gtk.theme` to define the GTK theme and, by default, the associated icon variant.
+
+The value inside `gtk.theme` determines the overall visual style. Available variants include:
 
 - Yaru
 - Yaru-blue
@@ -31,6 +33,21 @@ If you want to match the file manager icons with your theme, add a file called `
 - Yaru-sage
 - Yaru-wartybrown
 - Yaru-yellow
+
+If no other overrides are present, the icon theme follows the GTK theme automatically.
+
+To override specific components:
+
+- `icons.theme`: lets you define a different icon set
+- `cursor.theme`: lets you define a custom cursor theme
+
+When these files exist, they take precedence over the default behavior defined in `gtk.theme`.
+
+### GNOME accent
+
+GNOME accent color is configured separately through `accent.theme`.
+
+This file must contain only the accent name. It does not affect the GTK theme or the icon set, and it is handled independently from `gtk.theme`.
 
 ### Distributing your theme
 
