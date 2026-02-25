@@ -1,6 +1,6 @@
 # Migration
 
-Migrate from an existing Omakub installation to Omabuntu
+Migrate from an existing [Omakub](https://omakub.org) installation to Omabuntu
 
 ## Before You Start
 
@@ -9,20 +9,16 @@ Migrate from an existing Omakub installation to Omabuntu
 
 If you already have Omakub installed on your system and want to switch to Omabuntu, the migration script makes this transition smoother by preserving your existing configurations where possible while applying Omabuntu's enhancements.
 
-The migration process will:
-
-- Backup your current Omakub configuration
-- Update repository URLs and references
-- Apply Omabuntu-specific customizations
-- Preserve your personal settings and data
-- Install additional Omabuntu components
+During the process, your current Omakub setup is backed up, repository references are updated, and Omabuntu-specific customizations are applied. Your personal settings and data are preserved, and any additional Omabuntu components are installed automatically.
 
 ## Prerequisites
 
+Before starting, make sure you have:
+
 - An existing Omakub installation
 - A stable internet connection
-- Administrative (sudo) privileges
-- At least 5GB of free disk space for backups
+- Administrative privileges (sudo access)
+- At least 5GB of free disk space to store backups
 
 > [!note]
 > Migration works best from recent Omakub versions. If your Omakub installation is significantly outdated, consider a fresh Omabuntu install instead.
