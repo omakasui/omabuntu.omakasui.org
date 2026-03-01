@@ -19,6 +19,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "astro": "^5.17.2",
+    "astro-icon": "^1.1.5",
     "github-slugger": "^2.0.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
@@ -40,7 +41,8 @@
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.7.2",
     "typescript": "^5.9.3",
-    "unified": "^11.0.5"
+    "unified": "^11.0.5",
+    "vite-plugin-svgr": "^4.5.0"
   },
   "lint-staged": {
     "*.{ts,tsx,astro}": [
