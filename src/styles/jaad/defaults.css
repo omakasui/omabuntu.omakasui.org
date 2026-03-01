@@ -8,7 +8,7 @@
     /* Typography */
     --jaad-font-sans: var(--font-sans), sans-serif;
     --jaad-font-serif: var(--font-serif), Georgia, serif;
-    --jaad-font-mono: var(--font-monospace), monospace;
+    --jaad-font-mono: var(--font-mono), monospace;
     --jaad-font-size: 1.125rem;
     --jaad-line-height: 1.6;
 

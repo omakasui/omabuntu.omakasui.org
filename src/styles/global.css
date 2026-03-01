@@ -35,7 +35,7 @@
   /* Fonts */
   --font-serif: "Inter", sans-serif;
   --font-sans: "Inter", sans-serif;
-  --font-mono: "Fira Code", monospace;
+  --font-mono: "Cascadia Code", monospace;
 }
 
 @layer base {
