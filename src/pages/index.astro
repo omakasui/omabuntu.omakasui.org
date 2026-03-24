@@ -24,11 +24,11 @@ import Layout from "@/layouts/Layout.astro";
           aria-label="Installation command"
           style="scrollbar-width: none; -ms-overflow-style: none;"
         >
-          curl -fsSL https://omabuntu.omakasui.org/install | sh
+          curl -fsSL https://omabuntu.omakasui.org/install | bash
         </code>
         <button
           class="border-border-light bg-background-tertiary text-foreground-secondary hover:bg-surface-hover hover:text-foreground-bright flex shrink-0 cursor-pointer items-center justify-center rounded border px-4 py-2 text-[0.75rem] transition-colors"
-          onclick={`navigator.clipboard.writeText('curl -fsSL https://omabuntu.omakasui.org/install | sh')`}
+          onclick={`navigator.clipboard.writeText('curl -fsSL https://omabuntu.omakasui.org/install | bash')`}
           title="Copy to clipboard"
           aria-label="Copy installation command to clipboard"
         >
