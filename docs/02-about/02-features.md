@@ -10,18 +10,18 @@ The decision not to pursue an ultra-minimal setup aligns with Omakub’s [_Omaka
 
 ## Improved Update
 
-The Omabuntux update now covers the entire system, including integration with GNOME extensions and Flatpaks. Migration management has also been improved, giving users a better overview of what's being updated under the hood.
+The Omabuntu update now covers the entire system, including integration with GNOME extensions and Flatpaks. Migration management has also been improved, giving users a better overview of what's being updated under the hood.
 
-## Wofi
+## Walker
 
-Omabuntu features seamless integration with [`Wofi`](https://hg.sr.ht/~scoopta/wofi), a powerful application launcher for Wayland. This allows for quick access to applications, themes and, most importantly, a **Unified Menu** for all Omabuntu features.
+Omabuntu features seamless integration with [`Walker`](https://github.com/abenz1267/walker), a fast and extensible application launcher for Wayland. This allows for quick access to applications, themes and, most importantly, a **Unified Menu** for all Omabuntu features. Walker also powers the theme selector with image previews and the background picker.
 
 <video controls width="100%" height="auto" preload="metadata">
   <source src="/videos/wofi-launcher.webm" type="video/webm" />
   <p>Your browser doesn't support HTML5 video. <a href="/videos/wofi-launcher.webm">Download the video</a> instead.</p>
 </video>
 <p class="text-center">
-  <i>A quick demonstration of the Wofi integration and Unified Menu.</i>
+  <i>A quick demonstration of the Walker integration and Unified Menu.</i>
 </p>
 
 ## Shell Scripts
@@ -41,31 +41,7 @@ That's why we've introduced several shortcuts to make it easier to quickly launc
 
 ## More Themes
 
-There are a few more default themes than Omakub: _catppuccin-latte_, _flexoki-light_ , _ethereal_, _hackerman_, _vantablack_, _miasma_ and _white_.
-
-![Catppuccin Latte](/images/catppuccin-latte.png)
-
-<p class="text-center">
-  <i>Catppuccin Latte</i>
-</p>
-
-![Flexoki Light](/images/flexoki-light.png)
-
-<p class="text-center">
-  <i>Flexoki Light</i>
-</p>
-
-![Ethereal](/images/ethereal.png)
-
-<p class="text-center">
-  <i>Ethereal</i>
-</p>
-
-![Hackerman](/images/hackerman.png)
-
-<p class="text-center">
-  <i>Hackerman</i>
-</p>
+There are a few more default themes than Omakub: _catppuccin-latte_, _flexoki-light_, _ethereal_, _hackerman_, _vantablack_, _miasma_, _white_, _lumon_ and _retro-82_. You can see all of them in the [themes section](/manual/essentials/themes) of the manual, along with instructions on how to import custom ones.
 
 All of these themes are based on [Omarchy defaults](https://learn.omacom.io/2/the-omarchy-manual/52/themes).
 
@@ -96,9 +72,17 @@ The pre-installed applications are significantly reduced, giving the user greate
 
 The installation menu covers a good portion of the tools that may be useful for getting started. They can also be removed at any time, reducing the system to only essentials. The ability to remove and re-add pre-installed apps has also been added, allowing you to revert to a "fresh" Omabuntu whenever you want.
 
-## Kitty
+## Terminal Emulators
 
-While Alacritty remains the default, I preferred to add the ability to switch to Kitty, aligning it with the existing themes.
+While Alacritty remains the default, Omabuntu supports switching to **Ghostty** or **Kitty** as alternative terminal emulators, all integrated with the existing themes. You can install and switch between them via _Install > Terminal_ in the Omabuntu menu.
+
+## Tmux
+
+Omabuntu includes [`Tmux`](https://github.com/tmux/tmux) as a core terminal multiplexer, preconfigured with sensible defaults and a set of shell functions for development workflows. The `t` alias quickly attaches to an existing session or creates a new one, while `tdl` sets up a full development layout with editor, AI assistant, and terminal panes. See the [hotkeys](/manual/essentials/hotkeys#terminal-tmux) section for the full list of Tmux keybindings.
+
+## Package Management
+
+Omabuntu provides a built-in way to install and remove APT packages directly from the menu. Go to _Install > Package_ or _Remove > Package_ in the Omabuntu menu (`Super + Alt + Space`) to browse, search and manage system packages using an interactive `fzf`-based interface with package descriptions preview. See the [package management](/manual/configuration/packages) section for more details.
 
 ## No SNAP!
 

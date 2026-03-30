@@ -9,16 +9,18 @@ A carefully crafted set of keyboard shortcuts is included with Omabuntu to enhan
 > [!note]
 > Omabuntu uses 6 fixed workspaces instead of dynamic mode for better organization.
 
-| Hotkey                    | Action                                 |
-| ------------------------- | -------------------------------------- |
-| `Super` + `Space`         | Applications launcher                  |
-| `Super` + `A`             | See all applications (app grid)        |
-| `Super` + `Alt` + `Space` | Omabuntu control menu                  |
-| `Super` + `Escape`        | Lock/suspend/restart/shutdown computer |
-| `Super` + `W`             | Close window                           |
-| `Super` + `1-6`           | Jump to workspace 1-6                  |
-| `Shift` + `Super` + `1-6` | Move window/app to workspace 1-6       |
-| `Alt` + `1-9`             | Jump to dock app                       |
+| Hotkey                              | Action                                 |
+| ----------------------------------- | -------------------------------------- |
+| `Super` + `Space`                   | Applications launcher / Input source   |
+| `Super` + `A`                       | See all applications (app grid)        |
+| `Super` + `Alt` + `Space`           | Omabuntu control menu                  |
+| `Super` + `Escape`                  | Lock/suspend/restart/shutdown computer |
+| `Super` + `W`                       | Close window                           |
+| `Super` + `1-6`                     | Jump to workspace 1-6                  |
+| `Shift` + `Super` + `1-6`           | Move window/app to workspace 1-6       |
+| `Alt` + `1-9`                       | Jump to dock app                       |
+| `Shift` + `Super` + `Space`         | Switch input source                    |
+| `Shift` + `Super` + `Alt` + `Space` | Switch input source (backward)         |
 
 ## Tiling
 
@@ -43,8 +45,9 @@ A carefully crafted set of keyboard shortcuts is included with Omabuntu to enhan
 
 | Hotkey                          | Action                          |
 | ------------------------------- | ------------------------------- |
-| `Super` + `Return`              | Terminal (alacritty/kitty)      |
-| `Control` + `Alt` + `T`         | Default Terminal (Gnome)        |
+| `Super` + `Return`              | Terminal                        |
+| `Control` + `Alt` + `T`         | Terminal                        |
+| `Super` + `Alt` + `Return`      | Terminal with Tmux session      |
 | `Shift` + `Super` + `B`         | Web Browser                     |
 | `Shift` + `Super` + `Return`    | Web Browser                     |
 | `Shift` + `Super` + `Alt` + `B` | Web Browser (private/incognito) |
@@ -65,18 +68,43 @@ A carefully crafted set of keyboard shortcuts is included with Omabuntu to enhan
 
 | Hotkey                                  | Action                          |
 | --------------------------------------- | ------------------------------- |
-| `Shift` + `Super` + `Control` + `Space` | Omakub Theme Menu               |
+| `Shift` + `Super` + `Control` + `Space` | Omabuntu Theme Menu             |
 | `Super` + `Control` + `Space`           | Next background image for theme |
 
-Extra background images live in `~/.config/omakub/current/backgrounds`. You can put more there to cycle through. Also available via _Install > Style > Background_ in the Omakub menu.
+Extra background images live in `~/.config/omakub/current/backgrounds`. You can put more there to cycle through. Also available via _Install > Style > Background_ in the Omabuntu menu.
 
-All style options are also accessible under Style in the Omakub menu (`Super + Alt + Space`).
+All style options are also accessible under Style in the Omabuntu menu (`Super + Alt + Space`).
 
 ## Toggles
 
 | Hotkey                    | Action                                |
 | ------------------------- | ------------------------------------- |
 | `Super` + `Control` + `N` | Toggle nightlight display temperature |
+
+## Terminal (Tmux)
+
+Tmux is preconfigured with `Ctrl + Space` as the prefix key (`Ctrl + B` also works as a secondary prefix). After pressing the prefix, press the action key.
+
+| Hotkey                                | Action                  |
+| ------------------------------------- | ----------------------- |
+| `Prefix` + `v`                        | Split pane vertically   |
+| `Prefix` + `h`                        | Split pane horizontally |
+| `Control` + `Alt` + `Arrow`           | Navigate panes          |
+| `Control` + `Alt` + `Shift` + `Arrow` | Resize pane             |
+| `Prefix` + `x`                        | Close pane              |
+| `Prefix` + `c`                        | New window              |
+| `Prefix` + `r`                        | Rename window           |
+| `Prefix` + `k`                        | Close window            |
+| `Alt` + `1-9`                         | Switch to window 1-9    |
+| `Alt` + `Left/Right`                  | Previous/next window    |
+| `Alt` + `Shift` + `Left/Right`        | Move window left/right  |
+| `Prefix` + `C`                        | New session             |
+| `Prefix` + `R`                        | Rename session          |
+| `Prefix` + `K`                        | Close session           |
+| `Alt` + `Up/Down`                     | Previous/next session   |
+| `Prefix` + `q`                        | Reload configuration    |
+
+See the [Tmux documentation](https://github.com/tmux/tmux/wiki) to learn all the keybindings.
 
 ## Terminal (Zellij)
 

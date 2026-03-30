@@ -51,9 +51,9 @@ cp ~/.local/share/omakub-backup-{timestamp} ~/.local/share/omakub
 
 ## Known Issue
 
-### `X11` and `wofi`
+### `X11` and `Walker`
 
-`wofi` works correctly on both _Wayland_ and _X11_ sessions.
+`Walker` works correctly on both _Wayland_ and _X11_ sessions.
 
 However, when running under _X11_, some visual styles may not be applied exactly as intended due to minor incompatibilities. This can result in a slightly less polished appearance compared to the Wayland experience, but functionality is not affected.
 
