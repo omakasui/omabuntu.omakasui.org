@@ -34,22 +34,3 @@ Authenticate once:
 ```bash
 gh auth login
 ```
-
-Common commands:
-
-```bash
-gh pr create          # open a PR for the current branch
-gh pr list            # list open PRs
-gh repo clone owner/repo
-```
-
-## Editors (optional)
-
-Additional editors are available in the Omabuntu Menu (_Install > App_):
-
-| Editor             | Notes                                                        |
-| ------------------ | ------------------------------------------------------------ |
-| Visual Studio Code | Microsoft VS Code, with Omabuntu theme applied automatically |
-| Cursor             | AI-first code editor based on VS Code                        |
-| Zed                | Fast, GPU-accelerated editor                                 |
-| Doom Emacs         | Extensible Emacs with a curated config layer                 |
