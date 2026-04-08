@@ -29,7 +29,7 @@ Applications can be launched or focused in three ways:
 
 - `Alt + 1`, `Alt + 2`, and so on start or focus applications based on their position in the dock.
 
-- `Super + Space` opens the application launcher. Type the application name and press `Enter`.
+- `Super + Space` opens the application launcher (Walker). Type the application name and press `Enter`.
 
 - `Super` to reveal the dock and use the mouse if needed. The “Show Apps” icon displays all installed applications.
 

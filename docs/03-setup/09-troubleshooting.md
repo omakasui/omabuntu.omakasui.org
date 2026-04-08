@@ -51,10 +51,28 @@ cp ~/.local/share/omakub-backup-{timestamp} ~/.local/share/omakub
 
 ## Known Issue
 
-### `X11` and `wofi`
+### `X11` and `Walker`
 
-`wofi` works correctly on both _Wayland_ and _X11_ sessions.
+`Walker` works correctly on both _Wayland_ and _X11_ sessions.
 
 However, when running under _X11_, some visual styles may not be applied exactly as intended due to minor incompatibilities. This can result in a slightly less polished appearance compared to the Wayland experience, but functionality is not affected.
 
 If you are using _Wayland_, you will get the intended visual experience. On _X11_, expect small cosmetic differences only.
+
+## Non-LTS Ubuntu
+
+Omabuntu is designed and tested against Ubuntu LTS releases. If you are running a non-LTS version of Ubuntu, you may encounter issues that are outside the scope of official support.
+
+### Package Not Found or Wrong Version
+
+Non-LTS releases may use different package versions or have packages unavailable in the standard repositories. The Omakasui APT repository targets LTS codenames, so installing Omabuntu packages on a non-LTS release may fail or install an incompatible version.
+
+If this happens, check whether the non-LTS codename is listed in the repository sources at `/etc/apt/sources.list.d/omakasui.list`. You may need to manually point it to the closest LTS codename, understanding that this is unsupported and may cause instability.
+
+### APT Mirror Inconsistencies
+
+Non-LTS Ubuntu releases cycle through their mirror availability as they approach and pass end-of-life. If APT reports missing packages or fails to fetch updates, you may be hitting stale or removed mirrors. In that case, update your `/etc/apt/sources.list` to use the Ubuntu archive mirrors (e.g. `old-releases.ubuntu.com`) appropriate for your release.
+
+### General Advice
+
+If you choose to run Omabuntu on a non-LTS release, be prepared to manually resolve compatibility issues. The recommended path is to upgrade or reinstall to the current LTS (Ubuntu 24.04) and run a fresh Omabuntu installation.
