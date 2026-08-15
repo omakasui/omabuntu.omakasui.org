@@ -23,7 +23,7 @@ mise use -g ruby@3.4
 
 [Docker](https://docker.com) and Docker Compose are installed from the official Docker APT repository. The install adds your user to the `docker` group so `sudo` is not required.
 
-Use [Lazydocker](/manual/06-applications/06-tuis) as a TUI front-end for managing containers.
+Use [Lazydocker](/manual/applications/tuis) as a TUI front-end for managing containers.
 
 ## GitHub CLI
 
