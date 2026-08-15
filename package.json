@@ -16,7 +16,7 @@
   "dependencies": {
     "@lancher-dev/jaad": "^0.2.0",
     "astro": "^7.2.0",
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.59.1",
