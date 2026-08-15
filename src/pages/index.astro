@@ -1,40 +1,42 @@
 ---
-import Hero from "@/components/Hero.astro";
-import Layout from "@/layouts/Layout.astro";
+import Layout from "@lancher-dev/jaad/layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+
+const install = "curl -fsSL https://omabuntu.omakasui.org/install | bash";
 ---
 
 <Layout>
   <Hero />
 
-  <section aria-labelledby="intro-heading">
+  <section class="mx-auto mb-12 max-w-200" aria-labelledby="intro-heading">
     <h2 class="sr-only" id="intro-heading">Introduction</h2>
-    <p class="text-foreground-secondary mt-6 mb-16 text-[1.1rem] leading-[1.8]">
-      <p>
-        You can turn your Ubuntu (24.04) installation into a modern, elegant,
-        development-focused environment by running the following command in the
-        terminal:
-      </p>
-      <div
-        class="border-border bg-surface relative mx-0 my-6 flex items-center gap-4 rounded-sm border p-4"
-        role="group"
-        aria-label={`Installation command for omabuntu`}
-      >
-        <code
-          class="scrollbar-hide text-primary flex flex-1 items-center overflow-x-auto bg-none text-[0.9rem] whitespace-nowrap lg:overflow-visible"
-          aria-label="Installation command"
-          style="scrollbar-width: none; -ms-overflow-style: none;"
-        >
-          curl -fsSL https://omabuntu.omakasui.org/install | bash
-        </code>
-        <button
-          class="border-border-light bg-background-tertiary text-foreground-secondary hover:bg-surface-hover hover:text-foreground-bright flex shrink-0 cursor-pointer items-center justify-center rounded border px-4 py-2 text-[0.75rem] transition-colors"
-          onclick={`navigator.clipboard.writeText('curl -fsSL https://omabuntu.omakasui.org/install | bash')`}
-          title="Copy to clipboard"
-          aria-label="Copy installation command to clipboard"
-        >
-          <i class="nf nf-md-content_copy"></i>
-        </button>
-      </div>
+
+    <p class="text-foreground-secondary mt-6 text-[1.1rem] leading-[1.8]">
+      You can turn your Ubuntu (24.04) installation into a modern, elegant,
+      development-focused environment by running the following command in the
+      terminal:
     </p>
+
+    <div
+      class="border-border bg-surface relative mx-0 my-6 mb-16 flex items-center gap-4 rounded-sm border p-4"
+      role="group"
+      aria-label="Installation command for omabuntu"
+    >
+      <code
+        class="scrollbar-hide text-primary flex flex-1 items-center overflow-x-auto bg-none text-[0.9rem] whitespace-nowrap lg:overflow-visible"
+        aria-label="Installation command"
+        style="scrollbar-width: none; -ms-overflow-style: none;"
+      >
+        {install}
+      </code>
+      <button
+        class="border-border-light bg-background-tertiary text-foreground-secondary hover:bg-surface-hover hover:text-foreground-bright flex shrink-0 cursor-pointer items-center justify-center rounded border px-4 py-2 text-[0.75rem] transition-colors"
+        onclick={`navigator.clipboard.writeText('${install}')`}
+        title="Copy to clipboard"
+        aria-label="Copy installation command to clipboard"
+      >
+        <i class="nf nf-md-content_copy"></i>
+      </button>
+    </div>
   </section>
 </Layout>
