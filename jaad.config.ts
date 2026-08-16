@@ -15,7 +15,6 @@ export default defineJaadConfig({
 
   nav: [
     { label: "Manual", href: "/manual" },
-    { label: "Repository", href: "https://github.com/omakasui/omabuntu" },
     { label: "More", href: "https://omakasui.org" },
   ],
 
