@@ -1,16 +1,18 @@
-# APT Repository
+# APT Repositories
 
-Omabuntu maintains a dedicated APT repository at `packages.omakasui.org` to distribute packages not available in Ubuntu's standard repositories, and to keep certain packages more up to date.
+Omabuntu maintains two APT repositories for packages Ubuntu doesn't carry, or carries in an older version.
 
-## What It Contains
+| Repository              | Contains                                                                      |
+| ----------------------- | ----------------------------------------------------------------------------- |
+| `core.omakasui.org`     | Packages installed on every system, such as `omakub-walker` and `omakub-nvim` |
+| `packages.omakasui.org` | Optional packages, and newer builds where Ubuntu's version lags               |
 
-- **Omabuntu-specific packages** — tools built or packaged for this configuration (e.g. `omakub-walker`, `omakub-nvim`, `omakub-zellij`)
-- **Updated packages** — packages where the Ubuntu version lags behind and a newer release is preferred
-
-## Automatic Setup
-
-The repository is configured automatically during installation. The keyring is stored at `/usr/share/keyrings/omakasui-packages.gpg` and the source at `/etc/apt/sources.list.d/omakasui.list`.
+Both are configured during installation, and their keyrings are re-verified by `omakub update keyring` as part of every update. The keyrings live in `/usr/share/keyrings/omakasui-core.gpg` and `omakasui-packages.gpg`, the sources in `/etc/apt/sources.list.d/`.
 
 ## Release Channels
 
-The repository supports **stable** and **dev** channels, matching the Omabuntu update channels. Switching channels via _Update > Channel_ in the Omabuntu Menu updates the APT source automatically.
+Both repositories follow the **stable** and **dev** channels. Switching via _Update > Channel_ in the Omabuntu Menu updates both sources.
+
+```bash
+omakub version channel
+```

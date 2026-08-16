@@ -6,13 +6,20 @@ It is recommended that you use the custom script in _Update > Omabuntu_ (`Super 
 
 This pulls the latest Omabuntu code and configs, runs any pending migrations to get your system in sync with the latest, updates all system packages from Ubuntu, the GNOME extensions and all apps installed via Flatpak.
 
+From the terminal, `omakub update` does the same thing. `omakub update available` checks whether a newer version exists without installing anything.
+
+> [!warning]
+> Avoid running `sudo apt upgrade` on its own. It updates packages but skips the migrations and config updates that keep your system in sync with the Omabuntu release, so you can end up on new packages with old configuration.
+
+If an update leaves the system in a bad state, see [Troubleshooting](/manual/setup/troubleshooting).
+
 ## Development Channel
 
-When installed, Omabuntu comes in its _stable_ version, which coincides with the `main` branch of the repository. The release cycle for new stable versions is based on important fixes for functionality and a sustained testing phase for the features that are introduced. While it is important to provide new features as quickly as possible, it is also important to maintain the system's stability and therefore release them only when we are absolutely certain that nothing is broken.
+Omabuntu installs on the _stable_ channel, which tracks the `main` branch and is released only after a testing period.
 
-There's also a dedicated `dev` channel for introducing and testing new features. While this channel is intended for developers, it could also be the ideal environment to experiment with new developments and help develop Omabuntu by making suggestions and reporting based on what's introduced here.
+The _dev_ channel tracks new features as they land. It's meant for developers, but it's also the right place if you want to try things early and report back.
 
-When you switch between channels via _Update > Channel_ in the Omabuntu menu, the APT repository source is automatically updated to point to the correct package suite for that channel, ensuring you always receive the right packages.
+Switch via _Update > Channel_ in the Omabuntu menu. The APT sources follow the channel automatically.
 
 ## Restore Default Configs
 

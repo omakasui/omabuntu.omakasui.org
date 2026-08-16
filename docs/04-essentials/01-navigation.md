@@ -4,6 +4,16 @@ Omabuntu is designed to be primarily operated via _keyboard_. While several shor
 
 References to the `Super` key indicate the `Windows` key on most keyboards, or the `Command` key on Apple layouts.
 
+## Try It
+
+Two keys get you everywhere: `Super + Space` opens the application launcher, `Super + Alt + Space` opens the Omabuntu Menu, where themes, installs, updates and settings live.
+
+Start a terminal with `Super + Return`, then a browser with `Shift + Super + Return`. Press `Super + Left Arrow` on one to fill the left half of the screen and `Super + Right Arrow` on the other to fill the right. For anything finer, `Super + T` opens the [tiling](/manual/essentials/tiling) overlay.
+
+`Shift + Super + 2` moves the focused window to the second workspace, `Super + 1` and `Super + 2` jump between them, and `Super + W` closes anything.
+
+Launch, place, switch, close. The rest is refinement.
+
 ## Workspaces
 
 Omabuntu provides _six preconfigured workspaces_.

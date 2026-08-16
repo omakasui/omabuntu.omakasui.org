@@ -1,6 +1,6 @@
 # Terminal
 
-Omabuntu's default terminal is [Alacritty](https://alacritty.org), a GPU-accelerated terminal emulator that is fast, minimal, and fully theme-aware. Inside it, two terminal multiplexers are available: **Tmux** (primary) and **Zellij**.
+Omabuntu's default terminal is [Alacritty](https://alacritty.org), a GPU-accelerated terminal emulator that is fast, minimal, and fully theme-aware. **Tmux** is the terminal multiplexer.
 
 ## Alacritty
 
@@ -48,28 +48,8 @@ Tmux is pre-configured with `Ctrl + Space` as the prefix key (`Ctrl + B` also wo
 | `Prefix` + `d` | Detach        |
 | `Prefix` + `s` | List sessions |
 
+### Keybinding Reference
+
+`Prefix` + `?` opens a searchable popup listing every keybinding defined in your Tmux configuration. The same list is available from the Omabuntu Menu under _Learn > Tmux keybindings_.
+
 For Tmux layout functions like `tdl`, `tdlm`, and `tsl`, see [Shell Functions](/manual/applications/shell-functions).
-
-## Zellij
-
-[Zellij](https://zellij.dev) is available alongside Tmux and is Omakub's primary multiplexer. Omabuntu ships `omakub-zellij`, a custom-packaged version kept up to date via the Omakasui repository.
-
-### Tabs and Panes
-
-| Hotkey           | Action                  |
-| ---------------- | ----------------------- |
-| `Ctrl` + `G T N` | New tab                 |
-| `Ctrl` + `G T R` | Rename tab              |
-| `Ctrl` + `G P R` | New pane (right)        |
-| `Ctrl` + `G P D` | New pane (below)        |
-| `Ctrl` + `G P W` | Floating pane (toggle)  |
-| `Alt` + `Arrow`  | Navigate panes and tabs |
-
-### Sessions
-
-| Hotkey           | Action           |
-| ---------------- | ---------------- |
-| `Ctrl` + `G O D` | Save and detach  |
-| `Ctrl` + `G O W` | Resume a session |
-
-See the [Zellij documentation](https://zellij.dev/documentation/) for the full keybinding reference.

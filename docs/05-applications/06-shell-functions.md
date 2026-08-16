@@ -74,23 +74,26 @@ tsl 4 claude      # four side-by-side panes each running `claude`
 
 ## Transcoding
 
+These are thin wrappers around `omakub transcode`. See [Desktop Tools](/manual/applications/desktop-tools) for the full command, including the interactive picker and the Nautilus right-click action.
+
 ### Video
 
 ```bash
-webm2mp4 screen-recording.webm       # convert GNOME screen recording to mp4
-transcode-video-1080p input.mov      # encode to 1920×1080 h264
-transcode-video-4K input.mov         # encode to 4K h265
+transcode-video-1080p input.mov      # 1080p mp4
+transcode-video-4K input.mov         # 4K mp4
+transcode-video-gif input.mov        # animated gif
 ```
 
 ### Images
 
 ```bash
-img2jpg photo.png                    # convert to JPG with quality 85
-img2jpg-small photo.tiff             # resize to max 1080px wide, convert to JPG
-img2jpg-medium photo.tiff            # resize to max 2160px wide, convert to JPG
-img2jpg-large photo.tiff             # resize to max 3160px wide, convert to JPG
-img2png photo.jpg                    # convert to compressed lossless PNG
+img2jpg photo.png                    # JPG, high resolution
+img2jpg-medium photo.tiff            # JPG, medium resolution
+img2jpg-small photo.tiff             # JPG, low resolution
+img2png photo.jpg                    # PNG, high resolution
 ```
+
+Output is written next to the input as `name-<resolution>.<format>`, for example `input-1080p.mp4`.
 
 ## Git Worktrees
 

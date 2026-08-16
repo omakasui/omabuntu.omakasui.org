@@ -1,6 +1,6 @@
 # Commercial Applications
 
-Some of the optional applications available in the Omabuntu Menu are commercial or freemium. All are installable via _Install > App_.
+Some of the optional applications available in the Omabuntu Menu are commercial or freemium. Most are installable via _Install > Service_, Steam via _Install > Gaming_.
 
 ## 1Password
 
@@ -23,10 +23,6 @@ Typora offers a 15-day free trial; a license is a one-time purchase.
 ## Bitwarden
 
 [Bitwarden](https://bitwarden.com) is an open-source password manager with a free tier. It's an alternative to 1Password.
-
-## Zoom
-
-[Zoom](https://zoom.us) is a video conferencing client.
 
 ## Steam
 

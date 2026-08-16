@@ -6,16 +6,16 @@ Omabuntu provides several ways to install applications: through the Omabuntu Men
 
 The primary way to install and remove applications in Omabuntu is through the Omabuntu Menu (`Super + Alt + Space`). Navigate to _Install_ to access the curated app submenus:
 
-- **Service** — Desktop applications (1Password, Bitwarden, Discord, Dropbox, Obsidian, Signal, Spotify, Zoom, and more)
-- **Browser** — Web browsers (Brave, Chromium, Firefox, Zen)
+- **Service** — Desktop applications (1Password, Bitwarden, Discord, Dropbox, LibreOffice, LocalSend, OBS Studio, Obsidian, Signal, Spotify, Typora, Tailscale)
+- **Browser** — Web browsers (Chrome, Edge, Brave, Firefox, Zen)
 - **Editor** — Code editors (VSCode, Cursor, Zed, Doom Emacs)
 - **Terminal** — Terminal emulators (Alacritty, Ghostty, Kitty)
-- **Development** — Languages and tools (Docker, Ruby, JavaScript/Node, Go, Python, Mise, and more)
+- **Development** — Languages and databases (Ruby on Rails, JavaScript, Go, PHP, Python, Elixir, Zig, Rust, Java, .NET, OCaml, Clojure, Scala)
 - **Utility** — Utilities (Flameshot, Pinta, Starship, and more)
 - **AI** — AI tools (Ollama)
 - **Gaming** — Games (Steam, RetroArch, Minecraft)
 
-Apps installed through these menus can be removed via the corresponding _Remove_ submenus. This also works for the apps that come pre-installed, letting you revert to a lean base at any time.
+Apps installed through these menus can be removed via the corresponding _Remove_ submenus (Package, Web App, TUI, Style, Browser, Development, AI, Gaming, Preinstalls). This also works for the apps that come pre-installed, letting you revert to a lean base at any time.
 
 ## APT Package Browser
 
@@ -35,7 +35,7 @@ To remove APT packages, go to _Remove > Package_ in the Omabuntu Menu. This show
 
 Omabuntu ships with [Flatpak](https://flatpak.org) and the [Flathub](https://flathub.org) repository configured. Snap is not present. Flatpak apps are sandboxed and install cleanly alongside system packages.
 
-Several pre-installed apps (such as Chromium, LocalSend, and Pinta) are distributed as Flatpaks. You can also install additional Flatpaks manually:
+Several pre-installed apps are distributed as Flatpaks. You can also install additional Flatpaks manually:
 
 ```bash
 flatpak install flathub <app-id>
@@ -43,6 +43,10 @@ flatpak install flathub <app-id>
 
 Or browse the available apps at [flathub.org](https://flathub.org).
 
-## Omakasui APT Repository
+## Command Line Tools
 
-Omabuntu distributes some of its own packages (Walker, Elephant, omakub-nvim) through a dedicated APT repository. See the [APT Repository](/manual/configuration/apt-repository) section for details.
+Some CLI tools are wrappers in `~/.local/bin` that fetch the package on demand instead of being installed system-wide. Add your own with `omakub npm install <package>`. See [AI](/manual/applications/ai).
+
+## Omakasui APT Repositories
+
+Omabuntu distributes some of its own packages (Walker, Elephant, omakub-nvim) through dedicated APT repositories. See the [APT Repositories](/manual/configuration/apt-repository) section for details.

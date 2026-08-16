@@ -71,7 +71,7 @@ A carefully crafted set of keyboard shortcuts is included with Omabuntu to enhan
 | `Shift` + `Super` + `Control` + `Space` | Omabuntu Theme Menu             |
 | `Super` + `Control` + `Space`           | Next background image for theme |
 
-Extra background images live in `~/.config/omakub/current/backgrounds`. You can put more there to cycle through. Also available via _Install > Style > Background_ in the Omabuntu menu.
+Your own background images go in `~/.config/omakub/backgrounds/[theme]`, and join the rotation automatically. See [Backgrounds](/manual/configuration/backgrounds).
 
 All style options are also accessible under Style in the Omabuntu menu (`Super + Alt + Space`).
 
@@ -80,6 +80,18 @@ All style options are also accessible under Style in the Omabuntu menu (`Super +
 | Hotkey                    | Action                                |
 | ------------------------- | ------------------------------------- |
 | `Super` + `Control` + `N` | Toggle nightlight display temperature |
+
+## Tools
+
+| Hotkey                              | Action                    |
+| ----------------------------------- | ------------------------- |
+| `Super` + `Control` + `S`           | Share menu (LocalSend)    |
+| `Super` + `Control` + `.`           | Transcode a picture/video |
+| `Super` + `Control` + `R`           | Set a reminder            |
+| `Super` + `Control` + `Alt` + `R`   | Show upcoming reminders   |
+| `Super` + `Shift` + `Control` + `R` | Clear all reminders       |
+
+See [Desktop Tools](/manual/applications/desktop-tools) for what these do.
 
 ## Terminal (Tmux)
 
@@ -103,27 +115,9 @@ Tmux is preconfigured with `Ctrl + Space` as the prefix key (`Ctrl + B` also wor
 | `Prefix` + `K`                        | Close session           |
 | `Alt` + `Up/Down`                     | Previous/next session   |
 | `Prefix` + `q`                        | Reload configuration    |
+| `Prefix` + `?`                        | Show all keybindings    |
 
-See the [Tmux documentation](https://github.com/tmux/tmux/wiki) to learn all the keybindings.
-
-## Terminal (Zellij)
-
-| Hotkey                          | Action                    |
-| ------------------------------- | ------------------------- |
-| `Control` + `G` + `P` + `R`     | New vertical pane         |
-| `Control` + `G` + `P` + `D`     | New horizontal pane       |
-| `Alt` + `Arrow`                 | Navigate panes (and tabs) |
-| `Alt` + `=`                     | Expand pane               |
-| `Alt` + `-`                     | Shrink pane               |
-| `Control` + `G` + `T` + `N`     | New tab                   |
-| `Control` + `G` + `T` + `R`     | Rename tab                |
-| `Control` + `G` + `O` + `D`     | Suspend session           |
-| `Control` + `G` + `O` + `W`     | Resume session            |
-| `Control` + `G` + `S` + `E`     | Edit scroll history       |
-| `Control` + `R`                 | Reveal command history    |
-| `Control` + `G` + `R` + `Arrow` | Resize pane               |
-
-See the [Zellij manual](https://zellij.dev/documentation/keybinding-presets) to learn all the keybindings.
+`Prefix` + `?` opens a searchable popup built from your actual Tmux configuration. See the [Tmux documentation](https://github.com/tmux/tmux/wiki) for the full reference.
 
 ## File Manager
 

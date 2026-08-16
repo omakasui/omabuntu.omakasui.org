@@ -24,11 +24,11 @@ Both Omakub and Omabuntu ship with [Tactile](https://extensions.gnome.org/extens
 
 Omakub uses Tactile's default layout: **3 columns, 2 rows** (6 zones total), with a center region spanning two large slots and narrower wings on each side. Keys `Q`, `W`, `E` / `A`, `S`, `D` map to those zones.
 
-Omabuntu extends this to a **4-column, 3-row uniform grid** — 12 equal zones, mapped to `Q`, `W`, `E`, `R` / `A`, `S`, `D`, `F` / `Z`, `X`, `C`, `V`. This gives more flexibility on larger displays and makes it easier to work with 3 or 4 apps simultaneously. See the [tiling](/manual/essentials/tiling) section for the full reference.
+Omabuntu extends this to a **4-column, 2-row uniform grid**, 8 equal zones mapped to `Q`, `W`, `E`, `R` / `A`, `S`, `D`, `F`. This gives more flexibility on larger displays and makes it easier to work with 3 or 4 apps simultaneously. See the [tiling](/manual/essentials/tiling) section for the full reference.
 
-### Terminal Multiplexer: Tmux-first vs Zellij-first
+### Terminal Multiplexer: Tmux vs Zellij
 
-Omakub's primary terminal multiplexer is [Zellij](https://zellij.dev/), which runs inside Alacritty by default. Omabuntu ships both Zellij and [Tmux](https://github.com/tmux/tmux), with Tmux as the primary session manager. Zellij remains available for those who prefer it.
+Omakub's terminal multiplexer is [Zellij](https://zellij.dev/), which runs inside Alacritty by default. Omabuntu uses [Tmux](https://github.com/tmux/tmux) instead and does not ship Zellij. The terminal opens a plain shell, and Tmux is attached on demand with the `t` alias or `Super + Alt + Return`. Zellij is still available as an optional install running `sudo apt install omakub-zellij`.
 
 ### Themes
 

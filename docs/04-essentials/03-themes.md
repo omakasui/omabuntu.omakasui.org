@@ -2,9 +2,25 @@
 
 Omabuntu comes with a curated set of themes. You can select between them via _Style > Theme_ in the Omabuntu menu (`Super + Alt + Space`), or jump directly to the theme selector using `Super + Ctrl + Shift + Space`. The theme picker shows a preview image for each theme.
 
-Each theme styles the desktop, terminal, Neovim, system monitor (btop & tophat), Zellij, Tmux and VSCode.
+Each theme styles the desktop, terminal, Neovim, system monitor (btop & tophat), Tmux, VSCode, the GNOME shell extensions, and the `gum` prompts used by the Omabuntu Menu.
 
 Most themes also include a set of background images that you can cycle through using `Super + Ctrl + Space`.
+
+## Boot and Login Screen (experimental)
+
+The boot splash (Plymouth) and the login screen (GDM) can follow the active theme. Pick one from _Style > Plymouth_ in the Omabuntu Menu: the selector lists every theme that ships an unlock screen and shows a preview of each.
+
+From the terminal:
+
+```bash
+omakub plymouth set-by-theme "Tokyo Night"   # boot splash
+omakub gdm set-by-theme "Tokyo Night"        # login screen
+omakub plymouth reset                        # back to the Omabuntu default
+omakub gdm reset
+```
+
+> [!note]
+> On systems with LVM disk encryption the Plymouth customization is skipped. See [Troubleshooting](/manual/setup/troubleshooting).
 
 ![Catppuccin-Latte](/images/themes/catppuccin-latte.png)
 

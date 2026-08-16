@@ -1,11 +1,21 @@
 # Backgrounds
 
-All Omabuntu backgrounds are stored in `~/.config/omakub/backgrounds/[theme]`.
-If you want to add a new image to a specific theme, for example _nord_, just place the file inside `~/.config/omakub/backgrounds/nord`.
+Each theme ships its own set of background images. Cycle through them with `Super + Ctrl + Space`, or pick one from _Style > Background_ in the Omabuntu Menu, which shows a preview of each image.
 
-The easiest way to access the correct folder is through the _Omabuntu Menu_:
-go to _Install > Style > Background_. This opens the directory associated with the currently active theme.
+## Adding Your Own
 
-From there, open a second file manager window with `Super + Shift + F`, locate your image, and copy it into the theme folder. Once added, it automatically becomes part of the rotation cycle. You can switch between available backgrounds using `Super + Ctrl + Space`.
+Your images live in `~/.config/omakub/backgrounds/[theme]`. To add one to the _nord_ theme, drop the file into `~/.config/omakub/backgrounds/nord`. It joins the rotation immediately.
+
+The easiest way to reach the right folder is _Install > Style > Background_, which opens the folder for the active theme in the file manager. From there, open a second window with `Super + Shift + F` and copy your image in.
+
+Recognized formats: `jpg`, `jpeg`, `png`, `gif`, `bmp`, `webp`.
+
+## Setting One Directly
+
+```bash
+omakub theme bg set ~/Pictures/wallpaper.jpg
+omakub theme bg set ~/Pictures/wallpaper.jpg center   # zoom, center, stretch, fill, fit, spanned
+omakub theme bg next
+```
 
 If you're looking for high-quality wallpapers, a large curated collection is available in the [dharmx/walls repository](https://github.com/dharmx/walls) on GitHub.

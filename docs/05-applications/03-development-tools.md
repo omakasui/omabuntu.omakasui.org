@@ -1,6 +1,14 @@
 # Development Tools
 
-Omabuntu installs a suite of development tools as part of the optional _Dev Environment_ setup, available from the Omabuntu Menu on first run or at any time.
+Mise, Docker, and the GitHub CLI are installed on every Omabuntu system.
+
+Language runtimes are optional. _Install > Development_ in the Omabuntu Menu covers Ruby on Rails, Node.js, Bun, Deno, Go, PHP, Python, Elixir, Zig, Rust, Java, .NET, OCaml, Clojure, and Scala, or use `omakub install dev-env <name>` and `omakub remove dev-env <name>`.
+
+## Editors
+
+Omabuntu ships with Neovim. For something more mainstream, _Install > Editor_ offers VSCode, Cursor, Zed, and Doom Emacs. VSCode, Cursor, and Obsidian follow the active Omabuntu theme.
+
+Set the system-wide default with _Setup > Defaults > Editor_ or `omakub default editor code`. That's what `$EDITOR` and `Shift + Super + N` use. See [Defaults](/manual/configuration/defaults).
 
 ## Mise
 
@@ -21,9 +29,9 @@ mise use -g ruby@3.4
 
 ## Docker
 
-[Docker](https://docker.com) and Docker Compose are installed from the official Docker APT repository. The install adds your user to the `docker` group so `sudo` is not required.
+[Docker](https://docker.com) and Docker Compose are installed from the official Docker APT repository as part of the base system. The install adds your user to the `docker` group so `sudo` is not required.
 
-Use [Lazydocker](/manual/applications/tuis) as a TUI front-end for managing containers.
+Use [Lazydocker](/manual/applications/tuis) as a TUI front-end for managing containers, or `Super + Shift + D`.
 
 ## GitHub CLI
 

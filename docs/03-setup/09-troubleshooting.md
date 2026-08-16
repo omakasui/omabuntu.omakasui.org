@@ -1,6 +1,22 @@
 # Troubleshooting
 
-If you encounter any errors, this section is a good place to start troubleshooting.
+If you encounter any errors, this section is a good place to start troubleshooting. For questions that aren't about something being broken, see the [FAQ](/manual/setup/faq).
+
+## I broke my system with an update
+
+`omakub reinstall` restores the default packages and configs. Your own files are untouched, but customized Omabuntu configs are overwritten. To reset a single config instead, use _Update > Config_ in the Omabuntu Menu.
+
+Migration backups are kept in `~/.local/share/omakub-backup-{timestamp}/`.
+
+## Diagnostics
+
+`omakub debug` collects system state into `/tmp/omakub-debug.log`: version and branch, hardware, session type, GNOME extensions, installed packages, and recent kernel messages. Attach it when reporting an issue.
+
+```bash
+omakub debug              # write the log
+omakub debug --print      # write it and print it
+omakub debug --no-sudo    # skip the dmesg section, no sudo needed
+```
 
 ## Installation
 
