@@ -1,14 +1,7 @@
-/* omabuntu — sits on top of the tokyo-night preset. JAAD loads it last. */
-
-/* Tokyo Night as JAAD ships it, with omabuntu's green accent and its own
-   surfaces. The preset is dark in both modes and the site is pinned to
-   dark, so one block covers everything. */
 :root,
 html.dark {
   --color-primary: #9ece6a;
   --color-primary-light: #b5d99c;
-  /* Links hover towards primary-dark, which on a dark page has to read
-     brighter, not darker. */
   --color-primary-dark: #b5d99c;
 
   --color-foreground: #c0caf5;
@@ -31,22 +24,16 @@ html.dark {
   --color-info: #7aa2f7;
   --color-success: #9ece6a;
 
-  /* Keep the rendered markdown on the same accent as the chrome. */
   --jaamd-color-primary: #9ece6a;
-
   --jaamd-font-size: 0.75rem;
 }
 
-/* Monospace throughout, the way the site has always read. JAAD puts
-   --font-sans on html and --font-serif on the headings. */
 :root {
   --font-mono: "Fira Code", ui-monospace, monospace;
   --font-sans: var(--font-mono);
   --font-serif: var(--font-mono);
 }
 
-/* The "$ omabuntu" wordmark. `title` stays "Omabuntu" because it also feeds
-   <title> and the social cards; the mark itself is lowercase. */
 header .font-brand {
   font-family: var(--font-mono);
   font-style: normal;
@@ -60,8 +47,6 @@ header .font-brand::before {
   color: var(--color-foreground-bright);
 }
 
-/* Nerd Font glyphs are icons, not emphasis: JAAD's base layer paints every
-   <i> with the accent colour. */
 i.nf {
   color: var(--color-foreground-bright);
 }
