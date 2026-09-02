@@ -28,7 +28,7 @@ Before starting, make sure you have:
 To migrate from Omakub to Omabuntu, run the following command in your terminal:
 
 ```bash
-curl -fsSL https://omabuntu.omakasui.org/migrate | bash
+wget -qO- https://omabuntu.omakasui.org/migrate | bash
 ```
 
 A **reboot is required** at the end to ensure all changes take effect properly.

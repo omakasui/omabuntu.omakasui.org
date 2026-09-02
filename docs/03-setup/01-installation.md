@@ -22,7 +22,7 @@ Installing on a non-LTS release is possible but **not recommended**. You may enc
 To install Omabuntu, simply run the following command in your terminal:
 
 ```bash
-curl -fsSL https://omabuntu.omakasui.org/install | bash
+wget -qO- https://omabuntu.omakasui.org/install | bash
 ```
 
 The command downloads Omabuntu to your terminal and starts the installation. You'll be asked for your username and email to configure Git, then later to confirm the extensions that will be installed. A reboot is required at the end.
