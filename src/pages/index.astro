@@ -1,11 +1,11 @@
 ---
-import Layout from "@lancher-dev/jaad/layouts/Page.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
 import Hero from "../components/Hero.astro";
 
 const install = "wget -qO- https://omabuntu.omakasui.org/install | bash";
 ---
 
-<Layout>
+<SiteLayout>
   <Hero />
 
   <section class="mx-auto mb-12 max-w-200" aria-labelledby="intro-heading">
@@ -41,4 +41,4 @@ const install = "wget -qO- https://omabuntu.omakasui.org/install | bash";
       </button>
     </div>
   </section>
-</Layout>
+</SiteLayout>

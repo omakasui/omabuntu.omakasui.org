@@ -1,3 +1,4 @@
+import tailwindcss from "@tailwindcss/vite";
 import { defineJaadConfig } from "@lancher-dev/jaad";
 
 export default defineJaadConfig({
@@ -7,18 +8,14 @@ export default defineJaadConfig({
   description: "A fork of Omakub, more flexible and refined.",
   lang: "en",
 
+  astro: { vite: { plugins: [tailwindcss()] } },
+
   docsDir: "./docs",
   routeBase: "/manual",
 
   theme: "tokyo-night",
   appearance: "dark",
 
-  nav: [
-    { label: "Manual", href: "/manual" },
-    { label: "More", href: "https://omakasui.org" },
-  ],
-
-  // The git remote is this website, not the product it documents.
   social: { github: "https://github.com/omakasui/omabuntu" },
 
   ogImage: "/og-image.png",

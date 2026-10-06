@@ -1,0 +1,72 @@
+---
+import "../styles/site.css";
+
+interface Props {
+  pageTitle?: string;
+  description?: string;
+}
+
+const title = "Omabuntu";
+const {
+  pageTitle,
+  description = "A fork of Omakub, more flexible and refined.",
+} = Astro.props;
+const fullTitle = pageTitle ? `${pageTitle} | ${title}` : title;
+const canonical = Astro.url.href;
+const ogImage = Astro.site ? new URL("/og-image.png", Astro.site) : null;
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+    <link rel="canonical" href={canonical} />
+    <link
+      rel="icon"
+      href="/android-chrome-192x192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://www.nerdfonts.com/assets/css/webfont.css"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+  </head>
+  <body>
+    <header class="site-chrome site-header">
+      <a class="site-brand" href="/">
+        omabuntu
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/manual">Manual</a>
+        <a href="https://omakasui.org">More</a>
+        <a
+          href="https://github.com/omakasui/omabuntu"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Omabuntu on GitHub"
+          aria-label="Omabuntu on GitHub"
+        >
+          <i class="nf nf-fa-github"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <slot />
+    </main>
+
+    <footer class="site-chrome site-footer">
+      © {new Date().getFullYear()} Luca Pattocchio (Kasui)
+    </footer>
+  </body>
+</html>

@@ -21,6 +21,7 @@
     "sharp": "^0.35.5"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "@typescript-eslint/parser": "^8.71.1",
     "eslint": "^10",
     "eslint-config-prettier": "^10.1.8",
@@ -30,6 +31,7 @@
     "prettier": "3.9.9",
     "prettier-plugin-astro": "1.1.0",
     "prettier-plugin-tailwindcss": "0.8.1",
+    "tailwindcss": "^4.3.3",
     "typescript": "^6.0.0"
   },
   "lint-staged": {
