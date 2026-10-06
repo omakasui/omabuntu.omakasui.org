@@ -14,19 +14,19 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@lancher-dev/jaad": "^0.8.3",
-    "astro": "7.3.1",
-    "sharp": "^0.35.4"
+    "@lancher-dev/jaad": "^0.9.3",
+    "astro": "7.3.6",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.59.1",
-    "eslint": "^10.1.0",
+    "@typescript-eslint/parser": "^8.71.1",
+    "eslint": "^10",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-astro": "^3.1.0",
+    "eslint-plugin-astro": "^3.2.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "prettier": "3.9.6",
-    "prettier-plugin-astro": "0.14.1",
+    "lint-staged": "^17.6.0",
+    "prettier": "3.9.9",
+    "prettier-plugin-astro": "1.1.0",
     "prettier-plugin-tailwindcss": "0.8.1",
     "typescript": "^6.0.0"
   },
