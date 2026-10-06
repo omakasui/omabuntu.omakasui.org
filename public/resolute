@@ -1,0 +1,2 @@
+OMAKUB_REF=ubuntu2604
+eval "$(wget -qO- https://raw.githubusercontent.com/omakasui/omabuntu/ubuntu2604/boot.sh)"
