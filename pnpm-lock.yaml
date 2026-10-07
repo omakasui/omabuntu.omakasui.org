@@ -11,8 +11,8 @@ importers:
         specifier: ^0.9.10
         version: 0.9.10(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.9))(prettier@3.9.9)(typescript@6.0.3)
       "@lancher-dev/jaad":
-        specifier: ^0.9.3
-        version: 0.9.3(astro@7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
+        specifier: ^0.10.0
+        version: 0.10.0(@tailwindcss/vite@4.3.3(vite@8.3.2(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)))(astro@7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(tailwindcss@4.3.3)
       astro:
         specifier: 7.3.6
         version: 7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1)
@@ -1178,14 +1178,21 @@ packages:
         integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==,
       }
 
-  "@lancher-dev/jaad@0.9.3":
+  "@lancher-dev/jaad@0.10.0":
     resolution:
       {
-        integrity: sha512-mi2MzCXtb/cHvOFE01UGy4wIfY8A5AL95ergkLOv3C0KfOOvHBXUU6VHRBFrPNtbSPEps50+g3dxBkQ7M6sYXQ==,
+        integrity: sha512-O36LaP5JJb6LwfBq7DXGztjJkMnylkxJ4QFDa60bJX0KAqjlgiAroifvSZ55BhjU1dR3ABe4lnc94aGN8LRzEA==,
       }
     engines: { node: ">=22.12.0" }
     peerDependencies:
+      "@tailwindcss/vite": ^4.3.0
       astro: ">=7.0.0 <8.0.0"
+      tailwindcss: ^4.3.0
+    peerDependenciesMeta:
+      "@tailwindcss/vite":
+        optional: true
+      tailwindcss:
+        optional: true
 
   "@lancher-dev/jaamd@0.9.2":
     resolution:
@@ -5468,12 +5475,15 @@ snapshots:
 
   "@keyv/serialize@1.1.1": {}
 
-  "@lancher-dev/jaad@0.9.3(astro@7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))":
+  "@lancher-dev/jaad@0.10.0(@tailwindcss/vite@4.3.3(vite@8.3.2(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)))(astro@7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(tailwindcss@4.3.3)":
     dependencies:
       "@astrojs/sitemap": 3.7.4
       "@lancher-dev/jaamd": 0.9.2(astro@7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
       astro: 7.3.6(@astrojs/markdown-remark@7.3.1)(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1)
       github-slugger: 2.0.0
+    optionalDependencies:
+      "@tailwindcss/vite": 4.3.3(vite@8.3.2(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
+      tailwindcss: 4.3.3
     transitivePeerDependencies:
       - supports-color
 

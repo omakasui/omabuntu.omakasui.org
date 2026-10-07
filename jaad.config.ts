@@ -1,4 +1,3 @@
-import tailwindcss from "@tailwindcss/vite";
 import { defineJaadConfig } from "@lancher-dev/jaad";
 
 export default defineJaadConfig({
@@ -8,7 +7,7 @@ export default defineJaadConfig({
   description: "A fork of Omakub, more flexible and refined.",
   lang: "en",
 
-  astro: { vite: { plugins: [tailwindcss()] } },
+  tailwind: true,
 
   docsDir: "./docs",
   routeBase: "/manual",
