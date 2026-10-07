@@ -9,6 +9,11 @@ export default defineJaadConfig({
 
   tailwind: true,
 
+  nav: [
+    { label: "Manual", href: "/manual" },
+    { label: "More", href: "https://omakasui.org" },
+  ],
+
   docsDir: "./docs",
   routeBase: "/manual",
 

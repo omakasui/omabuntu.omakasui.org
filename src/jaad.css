@@ -50,3 +50,9 @@ header .font-brand::before {
 i.nf {
   color: var(--color-foreground-bright);
 }
+
+/* Nav only outside the manual. */
+[data-docs] .jaad-nav,
+[data-docs] .jaad-nav-mobile {
+  display: none;
+}
