@@ -1,28 +1,37 @@
-@import "./styles/identity.css";
-
 :root,
 html.dark {
-  --color-background: var(--identity-background);
-  --color-surface: var(--identity-surface);
-  --color-foreground: var(--identity-foreground);
-  --color-foreground-bright: var(--identity-foreground-bright);
-  --color-primary: var(--identity-primary);
-  --color-background-secondary: var(--identity-background-secondary);
-  --color-background-tertiary: var(--identity-background-tertiary);
-  --color-surface-hover: var(--identity-surface-hover);
-  --color-border-light: var(--identity-border-light);
-  --color-border: var(--identity-border);
-  --color-border-dark: var(--identity-border-dark);
-  --color-foreground-muted: var(--identity-foreground-muted);
-  --color-foreground-secondary: var(--identity-foreground-secondary);
-  --color-primary-dark: var(--identity-primary-dark);
-  --color-primary-light: var(--identity-primary-light);
-  --font-sans: var(--identity-font-sans);
-  --font-serif: var(--identity-font-serif);
-  --font-mono: var(--identity-font-mono);
+  --color-primary: #9ece6a;
+  --color-primary-light: #b5d99c;
+  --color-primary-dark: #b5d99c;
 
-  --jaamd-color-primary: var(--identity-primary);
+  --color-foreground: #c0caf5;
+  --color-foreground-secondary: #a9b1d6;
+  --color-foreground-muted: #565f89;
+  --color-foreground-bright: #f7f7f7;
+
+  --color-background: #1a1b26;
+  --color-background-secondary: #16161e;
+  --color-background-tertiary: #24283b;
+  --color-surface: #1f2335;
+  --color-surface-hover: #292e42;
+
+  --color-border: #363b54;
+  --color-border-light: #414868;
+  --color-border-dark: #282e44;
+
+  --color-error: #f7768e;
+  --color-warning: #e0af68;
+  --color-info: #7aa2f7;
+  --color-success: #9ece6a;
+
+  --jaamd-color-primary: #9ece6a;
   --jaamd-font-size: 0.75rem;
+}
+
+:root {
+  --font-mono: "Fira Code", ui-monospace, monospace;
+  --font-sans: var(--font-mono);
+  --font-serif: var(--font-mono);
 }
 
 header .font-brand {
