@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@lancher-dev/jaad": "^0.10.0",
-    "astro": "7.3.6",
+    "@jaamd/jaad": "^1.0.2",
+    "astro": "^7.3.6",
     "sharp": "^0.35.5"
   },
   "devDependencies": {
