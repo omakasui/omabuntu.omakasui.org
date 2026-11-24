@@ -1,61 +1,61 @@
 :root,
 html.dark {
-  --color-primary: #9ece6a;
-  --color-primary-light: #b5d99c;
-  --color-primary-dark: #b5d99c;
+    --color-primary: #9ece6a;
+    --color-primary-light: #b5d99c;
+    --color-primary-dark: #b5d99c;
 
-  --color-foreground: #c0caf5;
-  --color-foreground-secondary: #a9b1d6;
-  --color-foreground-muted: #565f89;
-  --color-foreground-bright: #f7f7f7;
+    --color-foreground: #c0caf5;
+    --color-foreground-secondary: #a9b1d6;
+    --color-foreground-muted: #565f89;
+    --color-foreground-bright: #f7f7f7;
 
-  --color-background: #1a1b26;
-  --color-background-secondary: #16161e;
-  --color-background-tertiary: #24283b;
-  --color-surface: #1f2335;
-  --color-surface-hover: #292e42;
+    --color-background: #1a1b26;
+    --color-background-secondary: #16161e;
+    --color-background-tertiary: #24283b;
+    --color-surface: #1f2335;
+    --color-surface-hover: #292e42;
 
-  --color-border: #363b54;
-  --color-border-light: #414868;
-  --color-border-dark: #282e44;
+    --color-border: #363b54;
+    --color-border-light: #414868;
+    --color-border-dark: #282e44;
 
-  --color-error: #f7768e;
-  --color-warning: #e0af68;
-  --color-info: #7aa2f7;
-  --color-success: #9ece6a;
+    --color-error: #f7768e;
+    --color-warning: #e0af68;
+    --color-info: #7aa2f7;
+    --color-success: #9ece6a;
 
-  --jaamd-color-primary: #9ece6a;
-  --jaamd-font-size: 0.75rem;
+    --jaamd-color-primary: #9ece6a;
+    --jaamd-font-size: 0.75rem;
 }
 
 :root {
-  --jaad-chrome-width: 80rem;
-  --jaad-sidebar-width: 14rem;
+    --jaad-chrome-width: 80rem;
+    --jaad-sidebar-width: 14rem;
 
-  --font-mono: "Fira Code", ui-monospace, monospace;
-  --font-sans: var(--font-mono);
-  --font-serif: var(--font-mono);
+    --font-mono: 'Fira Code', ui-monospace, monospace;
+    --font-sans: var(--font-mono);
+    --font-serif: var(--font-mono);
 }
 
 header .font-brand {
-  font-family: var(--font-mono);
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: normal;
-  text-transform: lowercase;
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: lowercase;
 }
 
 header .font-brand::before {
-  content: "$ ";
-  color: var(--color-foreground-bright);
+    content: '$ ';
+    color: var(--color-foreground-bright);
 }
 
 i.nf {
-  color: var(--color-foreground-bright);
+    color: var(--color-foreground-bright);
 }
 
 /* Nav only outside the manual. */
 [data-docs] .jaad-nav,
 [data-docs] .jaad-nav-mobile {
-  display: none;
+    display: none;
 }

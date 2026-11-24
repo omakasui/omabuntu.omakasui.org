@@ -1,51 +1,51 @@
-import { defineJaadConfig } from "@jaamd/jaad";
+import { defineJaadConfig } from '@jaamd/jaad'
 
 export default defineJaadConfig({
-  site: "https://omabuntu.omakasui.org",
+    site: 'https://omabuntu.omakasui.org',
 
-  title: "Omabuntu",
-  description: "A fork of Omakub, more flexible and refined.",
-  lang: "en",
+    title: 'Omabuntu',
+    description: 'A fork of Omakub, more flexible and refined.',
+    lang: 'en',
 
-  tailwind: true,
+    tailwind: true,
 
-  nav: [
-    { label: "Manual", href: "/manual" },
-    { label: "More", href: "https://omakasui.org" },
-  ],
+    nav: [
+        { label: 'Manual', href: '/manual' },
+        { label: 'More', href: 'https://omakasui.org' },
+    ],
 
-  docsDir: "./docs",
-  routeBase: "/manual",
+    docsDir: './docs',
+    routeBase: '/manual',
 
-  theme: "tokyo-night",
-  appearance: "dark",
+    theme: 'tokyo-night',
+    appearance: 'dark',
 
-  social: { github: "https://github.com/omakasui/omabuntu" },
+    social: { github: 'https://github.com/omakasui/omabuntu' },
 
-  ogImage: "/og-image.png",
-  editLink: true,
-  footer: `© ${new Date().getFullYear()} Luca Pattocchio (Kasui)`,
+    ogImage: '/og-image.png',
+    editLink: true,
+    footer: `© ${new Date().getFullYear()} Luca Pattocchio (Kasui)`,
 
-  head: [
-    {
-      tag: "link",
-      attrs: {
-        rel: "stylesheet",
-        href: "https://www.nerdfonts.com/assets/css/webfont.css",
-      },
-    },
-    {
-      tag: "link",
-      attrs: {
-        rel: "icon",
-        href: "/android-chrome-192x192.png",
-        type: "image/png",
-        sizes: "192x192",
-      },
-    },
-    {
-      tag: "link",
-      attrs: { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-    },
-  ],
-});
+    head: [
+        {
+            tag: 'link',
+            attrs: {
+                rel: 'stylesheet',
+                href: 'https://www.nerdfonts.com/assets/css/webfont.css',
+            },
+        },
+        {
+            tag: 'link',
+            attrs: {
+                rel: 'icon',
+                href: '/android-chrome-192x192.png',
+                type: 'image/png',
+                sizes: '192x192',
+            },
+        },
+        {
+            tag: 'link',
+            attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+        },
+    ],
+})
